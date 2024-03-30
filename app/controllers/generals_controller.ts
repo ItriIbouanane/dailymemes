@@ -6,7 +6,7 @@ export default class GeneralsController {
     let meme = await Meme.getMeme('memes')
     let getavatar = Meme.getAvatar
 
-    await Meme.StoreMemeifNotExists(meme)
+    await Meme.StoreMemeifNotExists(meme, 'general')
 
     let mostLikedMeme = await Meme.getMostLikedMeme('general')
 

@@ -6,7 +6,7 @@ export default class GamingsController {
     let meme = await Meme.getMeme('gamingmemes')
     let getavatar = Meme.getAvatar
 
-    await Meme.StoreMemeifNotExists(meme)
+    await Meme.StoreMemeifNotExists(meme, 'gaming')
 
     let mostLikedMeme = await Meme.getMostLikedMeme('gaming')
 

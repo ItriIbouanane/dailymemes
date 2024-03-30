@@ -6,7 +6,7 @@ export default class ProgrammingsController {
     let meme = await Meme.getMeme('ProgrammerHumor')
     let getavatar = Meme.getAvatar
 
-    await Meme.StoreMemeifNotExists(meme)
+    await Meme.StoreMemeifNotExists(meme, 'programming')
 
     let mostLikedMeme = await Meme.getMostLikedMeme('programming')
 
