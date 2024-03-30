@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.filled-heart {
+  display: none;
+}
+
+.heart {
+  transition: all 0.3s;
+}
+
+.heart:hover .outline-heart {
+  display: none;
+}
+
+.heart:hover .filled-heart {
+  display: block;
+  height: 25px;
+  transition: height 0.3s; /* Add transition for height change */
+}
